@@ -391,5 +391,16 @@ header {
 @media (min-width: 1200px) {
   .navbar-light .navbar-nav .nav-link {
     padding: 5px 20px; } }
+.hello {
+  background-size: cover;
+  background-position: center right; }
+  .hello article {
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 1%; }
+
+.btn-danger, .bg-danger {
+  background-color: #E84C3D !important; }
 
 /*# sourceMappingURL=theme.css.map */

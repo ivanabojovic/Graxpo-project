@@ -1,0 +1,16 @@
+
+
+.hello {
+    background-size:cover;
+    background-position: center right;
+    article {
+        height:100vh;
+        display:table-cell;
+        vertical-align: middle;
+        min-width: 1%;
+    }
+}
+.btn-danger, .bg-danger{
+    background-color: $red !important;
+}
+
