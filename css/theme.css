@@ -444,4 +444,9 @@ header {
   font-size: 40px;
   transition: 0.5s ease; }
 
+.portfolio {
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center; }
+
 /*# sourceMappingURL=theme.css.map */
