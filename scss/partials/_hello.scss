@@ -1,5 +1,4 @@
 
-
 .hello {
     background-size:cover;
     background-position: center right;
@@ -8,9 +7,10 @@
         display:table-cell;
         vertical-align: middle;
         min-width: 1%;
+        h1 {
+            font-size:35px;
+        }
     }
 }
-.btn-danger, .bg-danger{
-    background-color: $red !important;
-}
+
 
