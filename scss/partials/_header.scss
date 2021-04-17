@@ -1,0 +1,99 @@
+$red : #E84C3D;
+
+header {
+    transition:0.5s linear;
+
+}
+.header-active {
+    background: rgba(255,255,255,1);
+}
+.navbar-brand {
+    font-family: $leckerli-one;
+    font-size: 2rem;
+    color: $red !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.navbar-light {
+    .navbar-toggler {
+        border-color: $red !important;
+        overflow: hidden;
+        &:hover {
+            background-color: $red !important;
+        }
+        span {
+            display: block;
+            width: 32px;
+            height: 3px;
+            background: $red;
+            margin: 5px 0;
+            position: relative;
+            transition: 0.5s linear;
+        }
+        &:hover span {
+            background:$white;
+        }
+        &.active span:nth-of-type(2) {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        &.active span:nth-of-type(1) {
+            transform: rotate(45deg) translate(5px , 6px);
+        }
+        &.active span:nth-of-type(3) {
+            transform: rotate(-45deg) translate(5px , -6px);
+        }
+
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(232, 76, 61, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+    }
+    .navbar-nav {
+        background:$white;
+        .nav-link {
+            text-transform: uppercase;
+            color:#333b46;
+            padding: 5px 10px;
+            border-bottom: 1px solid #eee;
+            transition: 0.5s ease;
+            &:hover, &.active {
+                background: $red;
+                color: $white;
+            }
+        }
+
+
+    }
+}
+
+
+@media(min-width:768px) {
+    .navbar-light {
+        .navbar-nav {
+            background:transparent;
+            .nav-link {
+                color:#333b46;
+                padding: 5px 10px;
+                border-bottom: 2px solid transparent;
+                &:hover, &.active {
+                    background: transparent;
+                    color: $red;
+                    border-bottom: 2px solid $red;
+                }
+            }
+        }
+    }
+}
+@media(min-width:1200px) {
+    .navbar-light {
+        .navbar-nav {
+            .nav-link {
+                padding: 5px 20px;
+            }
+        }
+    }
+}
+
+
+
