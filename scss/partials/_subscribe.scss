@@ -1,0 +1,29 @@
+.subscribe {
+    .form-control {
+        background: transparent;
+        border:1px solid $white;
+        border-radius: 0;
+        color: $white;
+    }
+    form {
+        button {
+            border-color: $white;
+            border-radius: 0;
+            color:$white;
+            background: transparent;
+        }
+    }
+}
+.subscribe ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $white;
+}
+.subscribe ::-moz-placeholder { /* Firefox 19+ */
+  color: $white;
+}
+.subscribe :-ms-input-placeholder { /* IE 10+ */
+  color: $white;
+}
+.subscribe :-moz-placeholder { /* Firefox 18- */
+  color: $white;
+}
+

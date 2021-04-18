@@ -1,4 +1,4 @@
-$hover-color: #0384fc;
+
 
 .dash:after{
     content: '';
@@ -16,8 +16,8 @@ $hover-color: #0384fc;
 }
 .btn {
     &:hover {
-/*        color:darken($white,40%);*/
-       color:$hover-color;
+        color:darken($white,40%);
+       
     }
 }
 .btn-danger, .bg-danger{
