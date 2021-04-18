@@ -1,0 +1,28 @@
+$form-border-color: #ccc;
+.contact-form {
+    .form-control {
+        border-radius: 0;
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 2px  $form-border-color;
+            border-color: $form-border-color;
+        }
+    }
+    textarea {
+        height: 100px;
+        resize: none;
+    }
+}
+.contact {
+    .fa {
+        width: 40px;
+        text-align: center;
+        
+    }
+    a {
+        color: #81868e;
+    }
+    
+    }
+
+

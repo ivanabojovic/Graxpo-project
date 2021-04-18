@@ -518,4 +518,20 @@ header {
   /* Firefox 18- */
   color: #fff; }
 
+.contact-form .form-control {
+  border-radius: 0; }
+  .contact-form .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 2px #ccc;
+    border-color: #ccc; }
+.contact-form textarea {
+  height: 100px;
+  resize: none; }
+
+.contact .fa {
+  width: 40px;
+  text-align: center; }
+.contact a {
+  color: #81868e; }
+
 /*# sourceMappingURL=theme.css.map */
