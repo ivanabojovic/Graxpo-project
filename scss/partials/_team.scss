@@ -1,0 +1,55 @@
+$blue : #0384fc;
+
+.team-member {
+    display: inline-block;
+    max-width: 320px;
+    img {
+        width: 100%;
+        transition: 0.5s ease;
+    }
+    &:hover img {
+        transform: scale(1.1);
+    }
+    figure {
+        position: relative;
+        overflow: hidden;
+    }
+    .hover {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        background: $red;
+        color:$white;
+        display: none;
+        .fa {
+            color: $white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            line-height: 40px;
+            border:1px solid $white;
+            margin: 0 5px;
+            transition: 0.5s ease;
+            font-size: 22px;
+            &:hover {
+                transform: rotate(360deg);
+                text-decoration: none;
+                color: $blue;
+                border-color: $blue;
+            }
+        }
+    }
+    &:hover .hover {
+        display:block;
+    }
+    h5 {
+        a {
+            color: #333b46;
+            &:hover {
+                color: $blue;
+                text-decoration:none;
+            }
+        }
+    }
+}
